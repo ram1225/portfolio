@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="navbar-class">
+    <div [ngClass]="{'loader-stop': animStop }" class="loader">
+      <span class="my-logo" [routerLink]="['']">R</span>
+    </div>
+
+    <nav>
+      <a (click)="click(650)">About</a>
+      <a (click)="click(650+610)">Projects</a>
+      <a (click)="click(650)">Connect</a>
+    </nav>
+  </div>
+  <div class="main-div">
+    <div class="header-content">
+      <h1 class="fewword-class">
+        Explore <br> Program <br> Digital World.
+      </h1>
+    </div>
+    <div class="img-content">
+      <!-- <img src="../../assets/man.jpg"/> -->
+    </div>
+  </div>
+  <div class="btn-div">
+    <button  (click)="click(650)">More about me</button>
+  </div>
+</div>
+<app-about id="about"></app-about>
+<app-connect></app-connect>
