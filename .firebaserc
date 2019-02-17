@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "portfolio": "portfolio-rk",
+    "default": "portfolio-rk",
+    "prod": "portfolio-ngapp"
+  }
+}

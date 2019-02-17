@@ -8,10 +8,13 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class HeadComponent implements OnInit {
   fewWords: string = "Explore <br> Program in <br> The Digital World."
   animStop: boolean = false;
+  preload = true;
   constructor() { }
 
   ngOnInit() {
-    setTimeout(()=> this.animStop=true, 1000);
+    setTimeout(()=> this.preload=false, 1000);
+    setTimeout(()=> this.animStop=true, 2100);
+    
   }
 
  
